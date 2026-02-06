@@ -30,7 +30,7 @@
 
         /* BARRA DE ALERTA NO TOPO */
         .alert-bar {
-            background: #d60000; /* Vermelho Sangue */
+            background: #d60000;
             color: #fff;
             text-align: center;
             padding: 12px;
@@ -52,7 +52,7 @@
             line-height: 1.2;
             text-transform: uppercase;
         }
-        .highlight { color: #00ff00; background: rgba(0,255,0,0.1); padding: 2px 5px; border-radius: 4px;} /* Verde Neon */
+        .highlight { color: #00ff00; background: rgba(0,255,0,0.1); padding: 2px 5px; border-radius: 4px;}
         .red-text { color: #ff2222; font-weight: bold; }
 
         /* IMAGEM DO PRODUTO/RESULTADO */
@@ -95,6 +95,26 @@
         .benefits-list li { margin-bottom: 15px; font-size: 18px; color: #ddd; display: flex; align-items: center;}
         .checkmark { color: #00ff00; margin-right: 10px; font-size: 22px; }
 
+        /* BOX VIP E SORTEIO */
+        .vip-box {
+            background: #001a00;
+            border: 2px dashed #00ff00;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        .vip-tag {
+            background: #00ff00;
+            color: #000;
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
         /* BOX DE OFERTA (PREÇO E BOTÃO) */
         .offer-box {
             background: linear-gradient(145deg, #222, #000);
@@ -134,7 +154,7 @@
         .garantia-selo { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px; color: #aaa; font-size: 14px; }
         .garantia-selo img { height: 30px; }
 
-        /* PROVA SOCIAL (COMENTÁRIOS FAKE) */
+        /* PROVA SOCIAL */
         .comments-section { background: #fff; color: #222; padding: 25px; margin-top: 50px; border-radius: 12px; }
         .fb-header { font-weight: bold; font-size: 16px; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; color: #444;}
         .comment { display: flex; margin-bottom: 20px; }
@@ -145,7 +165,6 @@
         .meta { font-size: 12px; color: #65676b; margin-top: 8px; font-weight: 500;}
         .likes { color: #385898; }
 
-        /* RODAPÉ E DISCLAIMER (ANTI-BAN) */
         footer { text-align: center; font-size: 12px; color: #666; margin-top: 50px; padding-bottom: 30px; border-top: 1px solid #222; padding-top: 30px;}
         .disclaimer { font-size: 11px; color: #555; margin: 20px auto; max-width: 90%; line-height: 1.5; }
     </style>
@@ -170,90 +189,75 @@
         <p class="copy-text">
             A culpa <strong>NÃO É SUA</strong>. Você provavelmente está sofrendo com um "Travamento Metabólico" causado por toxinas no intestino.
         </p>
-        <p class="copy-text">
-            É como tentar limpar uma casa com o ralo entupido. Não adianta fazer dieta se a sujeira não sai.
-        </p>
 
         <div class="secret-box">
-            "Descobrimos a combinação exata de 3 ingredientes baratos da feira que agem como uma 'vassoura hidráulica' no seu organismo, destravando a queima de gordura em 24 horas."
+            "Descobrimos a combinação exata de 3 ingredientes baratos que agem como uma 'vassoura hidráulica', destravando a queima de gordura em 24 horas."
         </div>
-
-        <p class="copy-text">
-            Não precisa passar fome e nem se matar na academia faltando uma semana para a folia.
-        </p>
-        <p class="copy-text">
-            Nós preparamos o <strong>Combo Definitivo</strong> com absolutamente tudo que você precisa para chegar no Carnaval desinchada e leve.
-        </p>
         
         <div class="benefits-list">
             <h2>📦 O Que Você Recebe Hoje:</h2>
             <ul>
-                <li><span class="checkmark">✅</span> <strong>120 Receitas de Sucos Detox</strong> (O maior acervo do Brasil para nunca enjoar);</li>
-                <li><span class="checkmark">✅</span> <strong>10 Jantares Low Carb</strong> ("Mata-fome" deliciosos para queimar dormindo);</li>
-                <li><span class="checkmark">✅</span> <strong>5 Vitaminas Turbo</strong> (Ativadores metabólicos para suas manhãs);</li>
-                <li><span class="checkmark">✅</span> <strong>BÔNUS:</strong> Lista de compras 30 R$.</li>
+                <li><span class="checkmark">✅</span> <strong>120 Receitas de Sucos Detox</strong>;</li>
+                <li><span class="checkmark">✅</span> <strong>10 Jantares Low Carb</strong>;</li>
+                <li><span class="checkmark">✅</span> <strong>5 Vitaminas Turbo</strong>;</li>
+                <li><span class="checkmark">✅</span> <strong>BÔNUS:</strong> Lista de compras R$ 30.</li>
+            </ul>
+        </div>
+
+        <div class="vip-box">
+            <div class="vip-tag">🎁 BÔNUS DE HOJE: GRUPO VIP</div>
+            <p style="color: #fff; font-size: 16px; line-height: 1.4; margin-bottom: 10px;">
+                Ao entrar agora, você ganha acesso ao <b>Grupo VIP de Alunas</b> no WhatsApp:
+            </p>
+            <ul style="list-style: none; color: #00ff00; font-weight: bold; font-size: 15px;">
+                <li>🔥 SORTEIO SEMANAL DE R$ 100,00 NO PIX</li>
+                <li>📍 Suporte direto para tirar dúvidas</li>
+                <li>📍 Desafios diários para acelerar o resultado</li>
             </ul>
         </div>
 
         <div class="offer-box">
             <div class="offer-tag">⚡ PROMOÇÃO RELÂMPAGO DE CARNAVAL</div>
-            <p style="color: #ccc; font-size: 16px; margin-top: 15px;">Leve o Combo Completo (Valor Real R$ 135,00)</p>
+            <p style="color: #ccc; font-size: 16px; margin-top: 15px;">Combo Completo + Vaga no Grupo VIP</p>
             <p class="price-old">De R$ 97,00 por apenas:</p>
-            <p class="price-new">R$ 19,90</p> <a href="https://pay.kirvano.com/23af3173-bce4-42f3-9d4d-75d2ce5bd983" class="btn-pulse" onclick="fbq('track', 'InitiateCheckout');">
-                SIM! QUERO DESINCHAR PARA O CARNAVAL ➤
+            <p class="price-new">R$ 19,90</p> 
+            
+            <a href="https://pay.kirvano.com/23af3173-bce4-42f3-9d4d-75d2ce5bd983" class="btn-pulse" onclick="fbq('track', 'InitiateCheckout');">
+                SIM! QUERO O MÉTODO + VAGA NO GRUPO ➤
             </a>
             
             <div class="garantia-selo">
                 <span>🔒 Compra Segura</span> | <span>🛡️ Garantia de 7 Dias</span>
             </div>
-            <p style="font-size: 12px; color: #777; margin-top: 15px;">Acesso imediato enviado para seu e-mail.</p>
+            <p style="font-size: 11px; color: #ff3333; margin-top: 15px; font-weight: bold;">⚠️ Atenção: Restam apenas 7 vagas para o sorteio de sexta!</p>
         </div>
 
         <div class="comments-section">
             <div class="fb-header">Comentários Recentes (4 de 213)</div>
-
             <div class="comment">
-                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Foto" class="avatar">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" class="avatar">
                 <div class="comment-body">
                     <div class="name">Júlia Menezes</div>
-                    <div class="text">Gente, eu tava desesperada pq meu short do ano passado não fechava. Comecei o cronograma semana passada, hoje já fechou folgado! O suco 7 é milagroso.</div>
+                    <div class="text">Minha barriga desinchou muito em 3 dias. To amando os sorteios do grupo tb!</div>
                     <div class="meta">Curtir · Responder · <span class="likes">👍 24</span> · 12 min</div>
                 </div>
             </div>
-
             <div class="comment">
-                <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Foto" class="avatar">
+                <img src="https://randomuser.me/api/portraits/women/45.jpg" class="avatar">
                 <div class="comment-body">
                     <div class="name">Ana Paula Souza</div>
-                    <div class="text">Pelo amor de Deus, são 120 receitas mesmo? Achei que era mentira pelo preço kkkk. Comprei agora e chegou tudo, tô chocada com a quantidade de coisa. Amei os jantares.</div>
+                    <div class="text">Chegou tudo certinho no meu email. O grupo vip é top demais.</div>
                     <div class="meta">Curtir · Responder · <span class="likes">👍 11</span> · 45 min</div>
-                </div>
-            </div>
-
-            <div class="comment">
-                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Foto" class="avatar">
-                <div class="comment-body">
-                    <div class="name">Mariana Costa</div>
-                    <div class="text">Meu intestino parecia de pedra, vivia inchada. No segundo dia tomando a vitamina turbo eu fui no banheiro 3 vezes. Me sinto outra pessoa, muito mais leve. Valeu cada centavo.</div>
-                    <div class="meta">Curtir · Responder · <span class="likes">👍 35</span> · 2 h</div>
                 </div>
             </div>
         </div>
 
         <footer>
             <p>Copyright 2026 - Todos os direitos reservados.</p>
-            <p>Este site não faz parte do Facebook ou do Facebook Inc.</p>
-            
             <div class="disclaimer">
-                Isenção de responsabilidade: Os resultados podem variar de pessoa para pessoa. Este produto não substitui o parecer médico profissional. Não prometemos cura de doenças ou perda de peso milagrosa sem esforço. O foco do protocolo é auxiliar na saúde digestiva, redução de inchaço e bem-estar geral através de receitas naturais.
+                Isenção de responsabilidade: Os resultados podem variar. Este produto não substitui parecer médico.
             </div>
         </footer>
-
     </div>
-
 </body>
 </html>
-
-
-
-
